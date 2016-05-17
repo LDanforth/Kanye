@@ -123,13 +123,23 @@ function checkAnswer(level, questionNumber){
           correctAnswer = 0;
           badAnswer = 0;
           questionsUsed = [];
-          
+          changeCity(numLevel);
          buildPage(numLevel, numQuestion)
           };
   }//gameEndCheck End
   
   
-
+function changeCity(level){
+    if (level == 1){
+        document.getElementById('body').style.backgroundImage = 'url("chicago.jpg")';
+        document.getElementById('city').innerHTML = "Chicago";
+    }
+    if (level == 2){
+        document.getElementById('body').style.backgroundImage = 'url("austin.jpg")';
+        document.getElementById('city').innerHTML = "Austin";
+        
+    }
+}
 
   
 function generateRandomNum(qArray){

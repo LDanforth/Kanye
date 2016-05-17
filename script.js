@@ -139,6 +139,26 @@ function changeCity(level){
         document.getElementById('city').innerHTML = "Austin";
         
     }
+    if (level == 3){
+        document.getElementById('body').style.backgroundImage = 'url("boulder.jpg")';
+        document.getElementById('city').innerHTML = "Boulder";
+        
+    }
+    if (level == 4){
+        document.getElementById('body').style.backgroundImage = 'url("vegas.jpg")';
+        document.getElementById('city').innerHTML = "Vegas";
+        
+    }
+    if (level == 5){
+        document.getElementById('body').style.backgroundImage = 'url("la.jpg")';
+        document.getElementById('city').innerHTML = "Los Angeles";
+        
+    }
+    if (level == 6){
+        document.getElementById('body').style.backgroundImage = 'url("sanfran.jpg")';
+        document.getElementById('city').innerHTML = "San Francisco";
+        
+    }
 }
 
   

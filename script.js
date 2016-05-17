@@ -26,7 +26,7 @@ var kanye = {
   austin:
  [['Which CSS property is used to change the background color?','background-color','background','color'],
   ['Which of the following selectors matches the name of any element type?', 'The universal selector', 'The type selector', 'The descendant selector'],
-  ['CSS can be applied in three ways, which is not an option?', 'in the footer of an html document', 'in the head between <style> tags', 'inline'],
+  ['test', 'a', 'b', 'c'],
   ['Which of the following is not a valid color code?', '#505050','grey','808080',],
   ['What does CSS actually stand for?', 'cascading style sheets', 'can\'t stop stylin', 'counting stacks stacking'],
   ['Block elements can be aligned by setting the left and right margins to "align"','true','false','"I am God\'s vessel"']],
@@ -117,6 +117,10 @@ function checkAnswer(level, questionNumber){
          numQuestion++
          buildPage(numLevel, numQuestion);                       
                                          }
+      else if (numLevel == 6 && numQuestion == 4 ) {
+          content = "<h3>You Win!</h3>";
+           document.getElementById('quiz').innerHTML = content;
+      }
       else{
         numLevel++;
         numQuestion = 1;
